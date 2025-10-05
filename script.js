@@ -14,15 +14,15 @@ async function checkWeather(city) {
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
   document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
   if (data.weather[0].main === "Clouds") {
-    weatherIcon.src = "images/cloud.gif";
+    weatherIcon.src = "cloud.gif";
   } else if (data.weather[0].main === "Clear") {
-    weatherIcon.src = "images/clear.gif";
+    weatherIcon.src = "clear.gif";
   } else if (data.weather[0].main === "Rain") {
-    weatherIcon.src = "images/rain.gif";
+    weatherIcon.src = "rain.gif";
   } else if (data.weather[0].main === "Drizzle") {
-    weatherIcon.src = "images/drizzle.gif";
+    weatherIcon.src = "drizzle.gif";
   } else if (data.weather[0].main === "Mist") {
-    weatherIcon.src = "images/mist.gif";
+    weatherIcon.src = "mist.gif";
   }
   document.querySelector(".weather").style.display = "block";
 }
